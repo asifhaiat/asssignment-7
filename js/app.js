@@ -151,6 +151,8 @@ const displayLikedPosts = () => {
         const div = createPost(post);
         document.getElementById( "liked" ).appendChild(div);
     });
+    // empty liked array
+  likedPostsId = [];
 };
 
 const displayReportedPosts = () => {
@@ -159,6 +161,8 @@ const displayReportedPosts = () => {
         const div = createPost(post);
         document.getElementById( "reported" ).appendChild(div);
     });
+    // empty reported array
+  reportedPostsId = [];
 };
 
 const loadPosts = async () =>{
