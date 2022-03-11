@@ -105,7 +105,10 @@ const createPost = (post) => {
                   </button>
                 </div>
 
-                <div class="post__content">${displayContent(post.description)}</div>
+                <div class="post__content" id=${`display-contant-${post.id}`}>${displayContent(
+    post?.description,
+    post?.id
+  )}</div>
 
                 <div class="post__infos">
                   <div class="post__likes">
